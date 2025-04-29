@@ -1,0 +1,1 @@
+{"abi":[{"inputs":[{"internalType":"uint256","name":"_value","type":"uint256"}],"name":"setValue","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"value","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}],"address":"0xF001d24024F5c6D9dFE66905F06D3883D9E81DE7"}

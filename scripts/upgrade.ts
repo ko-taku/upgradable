@@ -17,7 +17,11 @@ async function main() {
     1) V2 컨트랙트를 배포하기 위한 스크립트를 완성 시킵니다.
     2) 업그레이드를 실행합니다. Proxy 컨트랙트에서 upgrade 함수를 실행시켜야 합니다. 
   */
-  const v2;
+  const v2 = await V2.deploy();
+  await v2.waitForDeployment();
+
+  await proxy.upgrade(await v2.getAddress());
+
 
   /* setting */
   console.log('Contract deployed to:', v2.target);
